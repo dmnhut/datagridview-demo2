@@ -31,10 +31,8 @@ namespace demo_2
             Containers.DATA_TABLE.Columns.Add(Member.fillable[0]);
             Containers.DATA_TABLE.Columns.Add(Member.fillable[1]);
             Containers.DATA_TABLE.Columns.Add(Member.fillable[2]);
+            this.dgvMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMembers.DataSource = Containers.DATA_TABLE;
-            this.dgvMembers.Columns[0].Width = 100;
-            this.dgvMembers.Columns[1].Width = 300;
-            this.dgvMembers.Columns[2].Width = 300;
             PutData();
             FormClear();
         }
